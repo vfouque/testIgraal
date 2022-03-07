@@ -1,0 +1,339 @@
+$igraalColor : #fd5b13;
+body{
+    font-family:'Roboto', Helvetica, Arial, sans-serif;
+    background-color: #f2eeed;
+}
+//HEADER//
+header{
+    width:100%;
+    .wrapperTopContainer{
+        background-color:$igraalColor;
+        box-shadow: 3px 0 6px 2px rgba(0, 0, 0, 0.3);
+
+        //Barre orange du header//
+        .topHeaderContainer{
+            margin:0 auto;
+            width:1012px;
+            height:67px;
+            display:flex;
+            align-items: center;
+        }
+        .logo{
+            display:flex;
+            justify-content: flex-start;
+            flex: 2 1 auto;
+
+            img{
+                height:45px;
+            }
+        }
+        .searchBar{
+            display:flex;
+            justify-content: flex-start;
+            flex: 3 1 auto;
+
+            input{
+                padding: 8px 15px;
+                border:1px solid #dddddd;
+                border-bottom-left-radius: 3px;
+                border-top-left-radius:3px;
+                font-family:'Roboto', Helvetica, Arial, sans-serif;
+                color:#666666;
+                width:100%;
+            }
+            input::placeholder{
+                color:#bbbbbb !important;
+            }
+            span{
+                font-size: 20px;
+                color: white;
+                background-color: #cd3e02;
+                padding: 8px 12px;
+                border-top-right-radius: 4px;
+                border-bottom-right-radius: 4px;
+            }
+        }
+        .account{
+            display: flex;
+            justify-content: center;
+            flex: 3 1 auto;
+            color:white;
+            font-size:14px;
+
+            img{
+                border-radius:50px;
+                width:46px;
+                overflow:hidden;
+                margin-top:2px;
+            }
+            span{
+                display:flex;
+                align-items:center;
+                margin-left:8px;
+            }
+            span i.fa-bell{
+                margin-top:0;
+            }
+            span.alertNumber{
+                font-size: 11px;
+                background-color: #cd3e02;
+                border-radius: 25px;
+                width: 20px;
+                height: 20px;
+                padding-right: 1px;
+                margin-left: -5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+    //Barre de navigation//
+
+    .wrapperNav{
+        height:60px;
+        background:white;
+       
+        nav{
+            display:flex;
+            justify-content: center;
+
+            ul{
+                width:1012px;
+                display:flex;
+                align-items:flex-start;
+                padding-left:0;
+                li{
+                    padding-right:40px;
+                    list-style-type: none;
+                    a{
+                        font-size:16px;
+                        text-decoration: none;
+                        color:#666666;
+                    }
+                    i{
+                        margin-left:8px;
+                    }
+                }
+            }
+        }
+        
+    }
+    .alert{
+        display: none;
+        position: absolute;
+        z-index: 1000;
+        left: 20%;
+        font-size: 25px;
+        text-align: center;
+        top: 130px;
+        width: 320px;
+        height: 25%;
+        padding: 5px;
+        background: WHITE;
+        border: 2px solid #ddd;
+
+        i{
+            font-size: 24px;
+            position: absolute;
+            right: -8px;
+            top: -11px;
+        }
+    }
+
+    //Section obtenir de l'aide
+
+    .bottomHeaderContainer{
+        background-image: url('../img/Rectanglex3.jpg');
+        background-size:cover;
+        background-repeat: no-repeat;
+        width:100%;
+        height:220px;
+        margin-top: -6px;
+
+        .wrapperBottomHeader{
+            margin:0 auto;
+            width:1012px;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+
+            h2{
+                font-family: 'Lato', Arial, Helvetica, sans-serif;
+                font-size:28px;
+                padding:15px 0;
+            }
+            div.baseline{
+                color:#666666;
+                background-color:white;
+                width:100%;
+                padding:20px 0;
+                display:flex;
+                justify-content: center;
+            }
+            .researchZone{
+                background-color: white;
+                display:flex;
+                width:100%;
+                padding-bottom:40px;
+                justify-content: center;
+
+                .faqSearchBar{
+                    display:flex;
+
+                    input{
+                        padding: 10px 50px;
+                        border:1px solid #cccccc;
+                        border-bottom-left-radius: 3px;
+                        border-top-left-radius:3px;
+                        font-family:'Roboto', Helvetica, Arial, sans-serif;
+                        color:#666666;
+                        width:250px;
+                        background-image: url('../img/zoom.png');
+                        background-repeat: no-repeat;
+                        background-position: 15px 8px;
+                    }
+                    input::placeholder{
+                        color:#bbbbbb !important;
+                    }
+                }
+                .searchButton{
+                    margin-left:20px;
+                    display:flex;
+                    button{
+                        background-color: $igraalColor;
+                        border-radius: 4px;
+                        border: none;
+                        color:white;
+                        padding:0 20px;
+                    }
+                }
+            }
+        }
+    }
+}    
+
+//Section principale
+
+main{
+    margin-top: 100px;
+    .mainBlock{
+        width:1012px;
+        margin:0 auto;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .mainElement a{
+            text-decoration: none;
+            color:black;
+            width:480px;
+            margin-bottom:35px;
+            padding:18px 0 30px 0;
+            background-color:white;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            h3{
+                margin-bottom:0;
+                margin-top:0;
+                font-family: 'Lato', Arial, Helvetica, sans-serif;
+                font-size:22px;
+            }
+            p{
+                color:#999999;
+                margin-top:10px;
+            }
+        }
+    }
+
+    //Questions/Réponses
+
+    .sectionQuestionAnswer{
+        margin:0 auto;
+        width:1012px;
+
+        h4{
+            font-size:20px;
+            margin-bottom:25px;
+        }
+        .questionsContainer{
+            background-color: white;
+            padding:10px 25px;
+
+            .question0, .question1, .question2, .question3, .question4, .question5, .question6, .question7, .question8, .question9 {
+                padding:25px 0 25px 5px;
+                border-bottom:1px solid #ccc ;
+                font-weight:500;
+                
+                
+                i{
+                    color:#ccc;
+                    margin-right: 15px;
+                }
+                span{
+                    cursor:pointer;
+                }
+                .secondaryQuestion{
+                    font-size:15px;
+                    color:#666;
+                    font-weight:400;
+                    padding-left:54px;
+                    padding-top:20px;
+                    
+                    p{
+                        cursor:pointer;
+                    }
+                }
+            }
+            .block0, .block1, .block2, .block3, .block4, .block5, .block6, .block7, .block8, .block9{
+                display:none;
+            }
+        }
+    }
+}
+
+
+//MEDIA QUERIES//
+@media screen and (max-width: 700px) {
+    header {
+        width:100% ;
+
+        .topHeaderContainer{
+            width:100%;
+        }
+        .wrapperNav nav ul{
+            justify-content: center;
+            width:700px;
+        }
+        .bottomHeaderContainer{
+            background-image: url('../img/Rectanglex1.jpg');
+        
+            .wrapperBottomHeader{
+                width:700px !important;
+            
+                .baseline p{
+                    text-align: center !important;
+                    width: 72% !important;
+                    line-height: 28px !important;
+                }
+            }
+        }
+    }
+    main{
+        width:100%;
+        margin-top:130px;
+
+        .mainBlock{
+            width:100%;
+            justify-content: center;
+        }
+        .sectionQuestionAnswer{
+            width:100%;
+            h4{
+                text-align:center;
+            }
+        }
+    }
+        
+}
